@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { fetchContacts } from '../redux/contacts/operations';
 import { selectError, selectIsLoading } from '../redux/contacts/selectors';
 import css from '../components/App.module.css';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -20,9 +20,9 @@ const Contacts = () => {
 
   return (
     <div className={css.wrapper}>
-      <Helmet>
+      {/* <Helmet>
         <title>Phonebook</title>
-      </Helmet>
+      </Helmet> */}
       <h1>Phonebook</h1>
       <ContactForm />
 

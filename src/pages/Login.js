@@ -1,13 +1,13 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import LoginForm from 'components/LoginForm/LoginForm';
 
 const Login = () => {
   return (
     <div>
-      <Helmet>
+      {/* <Helmet>
         <title>Login</title>
-      </Helmet>
+      </Helmet> */}
       <LoginForm />
     </div>
   );
