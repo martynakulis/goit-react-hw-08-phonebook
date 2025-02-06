@@ -8,6 +8,7 @@ import { refreshUser } from '../redux/auth/operations';
 import { useAuth } from '../hooks/useAuth';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
+import Layout from './Layout';
 
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));

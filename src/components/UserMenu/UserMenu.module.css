@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.useremail {
+  font-weight: 700;
+}
