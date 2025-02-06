@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Helmet } from 'react-helmet';
+
 import { useSelector } from 'react-redux';
 import { selectUserName } from '../redux/auth/selectors';
 
@@ -8,9 +8,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <Helmet>
-        <title>Home</title>
-      </Helmet> */}
       {userName ? (
         <p>Hello {userName}! Welcome to Phonebook! </p>
       ) : (
