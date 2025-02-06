@@ -25,7 +25,7 @@ const Contacts = () => {
       <h2>Contacts</h2>
       <Filter />
       <ContactList />
-      {isLoading && !error && <b>Request in progress...</b>}
+      {isLoading && !error && <p>Request in progress...</p>}
     </div>
   );
 };
