@@ -1,9 +1,13 @@
+.logBox {
+  position: absolute;
+  right: 10px;
+}
 .link {
   display: inline-block;
   text-decoration: none;
   padding: 12px;
   font-weight: 700;
-  color: #2a363b;
+  color: aliceblue;
 }
 
 .link.active {
