@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/151.307d71df.chunk.css","mappings":"AAAA,qBAIE,mBAAoB,CAFpB,cAAe,CACf,eAAgB,CAFhB,uBAIF","sources":["pages/Home.module.css"],"sourcesContent":[".welcome {\n  margin: 20px 0 20px 10px;\n  font-size: 20px;\n  font-weight: 300;\n  font-family: inherit;\n}\n"],"names":[],"sourceRoot":""}
