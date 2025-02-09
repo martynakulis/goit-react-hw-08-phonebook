@@ -16,13 +16,18 @@ const Navigation = () => {
         <Toolbar>
           <div className={css.header}>
             <div>
-              <Typography variant="h6" component="div">
+              <Typography variant="h6" component="a">
                 <NavLink to="/" className={css.link}>
                   Home{' '}
                 </NavLink>
               </Typography>
               {isLoggedIn && (
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Typography
+                  variant="h6"
+                  noWrap
+                  component="a"
+                  sx={{ flexGrow: 1 }}
+                >
                   <NavLink to="/contacts" className={css.link}>
                     Contacts
                   </NavLink>

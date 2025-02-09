@@ -3,6 +3,7 @@ import { nanoid } from '@reduxjs/toolkit';
 import css from './Filter.module.css';
 import { useDispatch } from 'react-redux';
 import { setFilterValue } from '../../redux/contacts/filterSlice';
+import Input from '@mui/material/Input';
 
 const Filter = () => {
   const filterInputId = nanoid();
@@ -14,13 +15,15 @@ const Filter = () => {
   };
   return (
     <div className={css.section}>
-      <label htmlFor={filterInputId}>Find contacts by name</label>
-      <input
+      <label htmlFor={filterInputId} />
+      <Input
+        placeholder="Find contacts by name"
         id={filterInputId}
         name="filter"
         type="text"
         onChange={handleInput}
-      ></input>
+        sx={{ width: '20rem' }}
+      />
     </div>
   );
 };

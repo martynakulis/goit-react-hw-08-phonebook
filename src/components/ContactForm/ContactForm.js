@@ -5,6 +5,8 @@ import { addContact } from '../../redux/contacts/operations';
 import { useSelector } from 'react-redux';
 import { selectContacts } from '../../redux/contacts/selectors';
 import { nanoid } from '@reduxjs/toolkit';
+import Button from '@mui/material/Button';
+import Input from '@mui/material/Input';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -32,8 +34,9 @@ const ContactForm = () => {
   return (
     <>
       <form onSubmit={submitForm} className={css.form}>
-        <label htmlFor={nameInputId}>Name</label>
-        <input
+        <label htmlFor={nameInputId} />
+        <Input
+          placeholder="Name"
           id={nameInputId}
           type="text"
           name="name"
@@ -41,8 +44,10 @@ const ContactForm = () => {
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
         />
-        <label htmlFor={numberInputId}>Number</label>
-        <input
+
+        <label htmlFor={numberInputId} />
+        <Input
+          placeholder="Number"
           id={numberInputId}
           type="tel"
           name="number"
@@ -50,7 +55,9 @@ const ContactForm = () => {
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
         />
-        <button type="submit">Add contact</button>
+        <Button variant="outlined" type="submit" sx={{ width: '10rem' }}>
+          Add contact
+        </Button>
       </form>
     </>
   );

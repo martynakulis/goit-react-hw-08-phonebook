@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
+
 .link {
   display: inline-block;
   text-decoration: none;

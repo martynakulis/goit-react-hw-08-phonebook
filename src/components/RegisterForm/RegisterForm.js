@@ -33,22 +33,22 @@ const RegisterForm = () => {
         <Input placeholder="Username" type="text" name="name" />
       </label>
       <label className={css.label}>
-        <input
+        {/* <input
           placeholder="Email"
           type="email"
           name="email"
           className={css.input}
-        ></input>
-        {/* <Input placeholder="Email" type="email" name="email" /> */}
+        ></input> */}
+        <Input placeholder="Email" type="email" name="email" />
       </label>
       <label className={css.label}>
-        <input
+        {/* <input
           placeholder="Password"
           type="password"
           name="password"
           className={css.input}
-        ></input>
-        {/* <Input placeholder="Password" type="password" name="password" /> */}
+        ></input> */}
+        <Input placeholder="Password" type="password" name="password" />
       </label>
       <Button variant="outlined" type="submit">
         Register

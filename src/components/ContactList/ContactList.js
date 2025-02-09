@@ -17,7 +17,7 @@ const ContactList = () => {
   };
 
   return (
-    <ul>
+    <ul className={css.list}>
       {contacts
         .filter(contact =>
           contact.name.toLowerCase().includes(filter.toLowerCase())

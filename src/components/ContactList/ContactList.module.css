@@ -1,10 +1,20 @@
+.list {
+  list-style-type: decimal;
+}
 .listItem {
   line-height: 1.7rem;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 .buttons {
+  display: inline-block;
+
+  height: 1.3rem;
   background-color: white;
-  border: 1px solid gray;
-  border-radius: 5px;
-  color: darkslategray;
+  border: 1px solid #42a5f5;
+  border-radius: 4px;
+  color: #42a5f5;
   font-weight: bold;
+  vertical-align: middle;
+  cursor: pointer;
 }
